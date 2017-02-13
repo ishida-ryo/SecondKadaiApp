@@ -4,6 +4,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
         let  resultViewController:ResultViewController = segue.destination as! ResultViewController
         resultViewController.name = textField.text
     }
+    
+
     
     @IBAction func unwind(segue: UIStoryboardSegue){
         
